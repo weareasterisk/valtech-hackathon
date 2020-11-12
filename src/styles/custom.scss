@@ -1,0 +1,518 @@
+@import './_colors.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: black!important;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+p {
+  letter-spacing: 0.05rem;
+  color: white;
+}
+blockquote {
+  border-left: 4px solid white;
+  padding-left: 0.5rem;
+}
+
+a {
+  text-underline: white;
+  text-underline-mode: white;
+  font-weight: normal;
+  color: $color-primary;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+::selection {
+  background: $color-primary;
+}
+
+::-moz-selection {
+  background: $color-primary;
+}
+
+.copyright {
+  height: 45px;
+  padding-top: 10px;
+  color: $lightgrey;
+  font-size: 0.8rem;
+  letter-spacing: 0.07rem;
+}
+
+.navbar, .navbar-collapse {
+  background-color: black!important;
+  height: 50px;
+  color: white;
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.jumptarget::before {
+  content:"";
+  display:block;
+  height: 55px;
+  margin: -55px 0 0;
+}
+
+.pageHome {
+  padding-top: 144px;
+  text-align: center;
+  color: white;
+}
+
+.pageAbout {
+  color: white;
+}
+
+.pointDownWrapper {
+
+}
+
+.bg-darkgrey {
+  background-color: $darkgrey;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-asterisk-logo {
+  background: url("//cdn.weareasterisk.com/logos/svg/logo-white-min.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.navLogo {
+  height: 100%;
+  width: 50px;
+  background: transparent url("//cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkRGB.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.nav-item {
+  height: 50px;
+  text-align: center;
+  background-color: black;
+}
+
+nav li::before {
+  content: none;
+}
+
+.nav-center {
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-collapse {
+  background: $darkgrey;
+}
+
+.nav-link {
+  text-transform: uppercase!important;
+  margin-top: 2px;
+  color: white!important;
+  font-weight: 600;
+}
+
+.nav-link:active {
+  padding-bottom: 4px!important;
+  border-bottom: 4px solid white;
+}
+
+.nav-link:hover {
+  padding-bottom: 4px!important;
+  border-bottom: 4px solid white;
+}
+
+.navbar-toggler {
+  border: 0!important;
+}
+
+.navbar-toggler:active {
+  border: 0!important;
+}
+
+.navbar-toggler-icon {
+  color: white!important;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjYiIGhlaWdodD0iMjYiCnZpZXdCb3g9IjAgMCAyMTAgMjEwIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIxMHYtMjEwaDIxMHYyMTB6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTI2LjI1LDQzLjc1Yy0zLjE1NTU2LC0wLjA0NDYzIC02LjA5MDcxLDEuNjEzMjggLTcuNjgxNTIsNC4zMzg4OWMtMS41OTA4MSwyLjcyNTYgLTEuNTkwODEsNi4wOTY2MiAwLDguODIyMjNjMS41OTA4MSwyLjcyNTYgNC41MjU5NSw0LjM4MzUxIDcuNjgxNTIsNC4zMzg4OWgxNTcuNWMzLjE1NTU2LDAuMDQ0NjMgNi4wOTA3MSwtMS42MTMyOCA3LjY4MTUyLC00LjMzODg5YzEuNTkwODEsLTIuNzI1NiAxLjU5MDgxLC02LjA5NjYyIDAsLTguODIyMjNjLTEuNTkwODEsLTIuNzI1NiAtNC41MjU5NSwtNC4zODM1MSAtNy42ODE1MiwtNC4zMzg4OXpNMjYuMjUsOTYuMjVjLTMuMTU1NTYsLTAuMDQ0NjMgLTYuMDkwNzEsMS42MTMyOCAtNy42ODE1Miw0LjMzODg5Yy0xLjU5MDgxLDIuNzI1NiAtMS41OTA4MSw2LjA5NjYyIDAsOC44MjIyM2MxLjU5MDgxLDIuNzI1NiA0LjUyNTk1LDQuMzgzNTEgNy42ODE1Miw0LjMzODg5aDE1Ny41YzMuMTU1NTYsMC4wNDQ2MyA2LjA5MDcxLC0xLjYxMzI4IDcuNjgxNTIsLTQuMzM4ODljMS41OTA4MSwtMi43MjU2IDEuNTkwODEsLTYuMDk2NjIgMCwtOC44MjIyM2MtMS41OTA4MSwtMi43MjU2IC00LjUyNTk1LC00LjM4MzUxIC03LjY4MTUyLC00LjMzODg5ek0yNi4yNSwxNDguNzVjLTMuMTU1NTYsLTAuMDQ0NjMgLTYuMDkwNzEsMS42MTMyOCAtNy42ODE1Miw0LjMzODg5Yy0xLjU5MDgxLDIuNzI1NiAtMS41OTA4MSw2LjA5NjYyIDAsOC44MjIyM2MxLjU5MDgxLDIuNzI1NiA0LjUyNTk1LDQuMzgzNTEgNy42ODE1Miw0LjMzODg5aDE1Ny41YzMuMTU1NTYsMC4wNDQ2MyA2LjA5MDcxLC0xLjYxMzI4IDcuNjgxNTIsLTQuMzM4ODljMS41OTA4MSwtMi43MjU2IDEuNTkwODEsLTYuMDk2NjIgMCwtOC44MjIyM2MtMS41OTA4MSwtMi43MjU2IC00LjUyNTk1LC00LjM4MzUxIC03LjY4MTUyLC00LjMzODg5eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat!important;
+}
+
+.footer-logo {
+  min-height: 59px;
+  background: transparent url("//cdn.weareasterisk.com/logos/svg/logo-white-min.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.15rem;
+}
+
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.controller-art {
+  width: 700px;
+}
+
+.va-logo {
+  width: 600px;
+  padding: 1rem;
+}
+
+.break-image {
+  margin-top: 4rem;
+  width: 150px;
+  margin-bottom: 4rem;
+}
+
+.break-image-small {
+  margin-top: 4rem;
+  width: 50px;
+  margin-bottom: 4rem;
+}
+
+.image-v-center-parent {
+  position: relative;
+}
+
+.image-v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.partners-image {
+  width: 100%;
+  height: auto;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.opacity-8{
+  opacity: 0.8;
+}
+
+.description-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.description-item {
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.08rem;
+  font-size: 1.18rem;
+}
+
+.p-16 {
+  padding: 16px!important;
+}
+
+.p-top-50 {
+  padding-top: 50px;
+}
+
+.p-t-75 {
+  padding-top: 75px;
+}
+
+.p-b-6 {
+  padding-bottom: 6px;
+}
+
+.p-b-8 {
+  padding-bottom: 8px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.m-r-72 {
+  margin-right: 72px!important;
+}
+
+.m-b-8 {
+  margin-bottom: 8px;
+}
+
+.m-b-6 {
+  margin-bottom: 6px;
+}
+
+.m-b-2 {
+  margin-bottom: 2px;
+}
+
+.m-t-32 {
+  margin-top: 36px!important;
+}
+
+.-m-r-20 {
+  margin-right: -20px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-r-6 {
+  margin-right: 6px;
+}
+
+.m-l-6 {
+  margin-left: 6px;
+}
+
+.skeletonButton {
+  background-color: transparent!important;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  border: 2px solid white!important;
+  font-weight: 600!important;
+  font-size: 22px!important;
+  width: 14rem;
+}
+
+.skeletonButton:hover {
+  background-color: $color-primary!important;
+  color: black!important;
+  border: 2px solid $color-primary!important;
+}
+
+.w-800p {
+  max-width: 800px;
+}
+
+.w-1200p {
+  max-width: 1200px;
+}
+
+.w-400p {
+  max-width: 400px;
+}
+
+.w-600p {
+  max-width: 600px!important;
+  width: 600px;
+}
+
+.w-max-600p {
+  max-width: 600px!important;
+}
+
+.w-250p {
+  width: 250px;
+}
+
+.w-200p {
+  width: 200px!important;
+}
+
+.w-200p-max {
+  max-width: 200px!important;
+}
+
+.w-100p-max {
+  max-width: 100px!important;
+}
+
+.h-200p-max {
+  max-height: 200px;
+  height: auto;
+}
+
+.h-200p-min {
+  height: auto;
+  min-height: 200px;
+}
+
+.h-80p-min {
+  min-height: 80px;
+  height: auto;
+}
+
+.hw-30 {
+  height: 30px;
+  width: 30px;
+}
+
+.hyphenate {
+  hyphens: auto;
+}
+
+.speech {
+  font-size: 1.06rem;
+  text-align: justify-all;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.vertical-center-image {
+  display: table-cell;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.primary {
+  color: $color-primary;
+}
+
+.orange {
+  color: $orange;
+}
+
+.orange:hover {
+  color: $orange;
+}
+
+.branding-orange {
+  color: $brand-orange
+}
+
+.branding-orange:hover {
+  color: $brand-orange;
+}
+
+.typeform {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/*
+START FAQ STYLINGS
+*/
+
+.faq {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.faq-content {
+  color:#000;
+}
+.faq-link {
+  cursor: pointer;
+  margin: 0 !important; // remove inherited margin
+  padding: .5em; // add padding to help with hover shadow.
+  &:hover {
+    background-color: #2b2828
+    // FIX this color later! - and basically all of the hover affects here.
+  }
+}
+.faq-question {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  letter-spacing: 0.06rem;
+}
+
+.faq-header {
+  margin: 1.5em 2em
+}
+
+.pre-formatted {
+  white-space: pre-line; // Preserve whitespace / newlines in JSON
+}
+
+/*
+END FAQ STYLINGS
+*/
+
+.col-2-table {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.font-weight-medium {
+  font-weight: 600;
+}
+
+.text-underline {
+  text-decoration-color: color(white);
+}
+
+.line-height-min {
+  line-height: 1.2rem;
+}
+
+.p-sides-0 {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.invert-color-filter {
+  filter: brightness(0) invert(1);
+}
+
+.cta-button {
+  background-color: $brand-orange;
+  color: $lightgrey;
+}
+
+#social li {
+  list-style: none;
+  padding-right: .75rem;
+}
+
+footer {
+  margin-top: 140px;
+  overflow: hidden
+}
+
+footer li {
+  float: right;
+  list-style: none
+}
+
+#footer-heart {
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-property: background-color, border-color, color, fill, stroke;
+}
