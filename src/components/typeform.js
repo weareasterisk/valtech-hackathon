@@ -1,8 +1,9 @@
-import React, {Component, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import * as typeformEmbed from "@typeform/embed";
-import {Redirect} from "react-router";
+import {Redirect} from "react-router-dom";
   
 export default function SignupForm() {
+  const [redirect, setRedirect] = useState(false)
   useEffect(() => {
     const popup = typeformEmbed.makePopup(
       'https://architech-inc.typeform.com/to/XSuMzBbe',
@@ -10,14 +11,20 @@ export default function SignupForm() {
         mode: 'drawer_left',
         drawerWidth: 9999,
         hideScrollbars: true,
-        autoOpen: true
+        autoOpen: true,
+        onClose: () => setRedirect(true)
       }
     );
     return () => popup.close();
   })
   return (
-    <div className="typeform">
+    <React.Fragment>
+      {redirect &&
+        <Redirect to="/" />
+      }
+      <div className="typeform">
 
-    </div>
+      </div>
+    </React.Fragment>
   )
 }

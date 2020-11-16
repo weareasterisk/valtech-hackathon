@@ -14,7 +14,7 @@ const data = [
   {
     question: 'Who can participate?',
     questionText:
-      `<p>Anyone who signs up via the registration form can participate! We also ask that you join the Discord to stay as up to date as possible.</p>`,
+      `<p>Anyone can apply, no previous experience needed! All participants must sign up via the registration form! The organizers  of the hackathon will review applications and send out acceptance emails to participants before the event with more event information.</p>`,
   },
   {
     question: "Do I need to know how to code? ",
@@ -43,7 +43,7 @@ const data = [
   {
     question: "What can I win?",
     questionText:
-      `<p>We’ll have a few cool prizes and swag available. This is mostly a time for us to come together and build things for fun!</p>`,
+      `<p>We’ll have a few cool prizes and swag available. This is mostly a time for us to come together and learn, network, and build things for fun! After the event you will have a project that you can proudly showcase to future employers.</p>`,
   },
   // {
   //   question: 'How do I win?',

@@ -33,41 +33,39 @@ export default class HomePage extends Component {
           <section id="about" className="pageAbout jumptarget">
             <h1>About</h1>
             <div className="w-800p margin-center container-fluid">
-              <h4 className="p-header primary">THE VALTECH HACKATHON</h4>
+              <h4 className="p-header primary">THE VALTECH SOCIAL IMPACT HACKATHON</h4>
               <p className="speech">
-                The Valtech Hackathon is a free virtual Hackathon hosted with
-                <a className="primary" href="https://valtech.com" target="_blank" rel="noopener noreferrer"> Valtech</a>. <a className="primary" href="https://www.weareasterisk.com/" target="_blank" rel="noopener noreferrer">Asterisk</a> is proud to partner with Valteceh to bring together the best elements of creativity and software development in a high powered weekend full of building, prototyping, and fun.
+                <a className="primary" href="https://valtech.com" target="_blank" rel="noopener noreferrer">Valtech Solutions</a>, a global technology agency, and <a className="primary" href="https://valtech.com" target="_blank" rel="noopener noreferrer">Create Labs</a>, a social venture and co-producer of the event, will be hosting its first Social Impact Hackathon as part of a new initiative seeking to make a greater impact in the community. This event, which will take place virtually, will consist of community outreach through training, mentorship and hackathon style social impact challenges.
               <br/>
               </p>
               <h4 className="p-header primary">WHAT IS VALTECH?</h4>
               <p className="speech">
               Valtech is a global business transformation agency delivering innovation with a purpose. We enable clients to anticipate tomorrow’s trends and connect more directly with consumers across their digital touch points while optimizing time-to-market and ROI.
-              <br/>
               <br />
-              We are a network of more than 3000 innovators, design thinkers, marketers, creatives and developers spanning 5 continents with offices in 16 countries (USA, UK, Canada, France, Germany, Netherlands, Sweden, Switzerland, Denmark, Brazil, China, India, Australia, Singapore, Argentina, Ukraine).
-              <br/>
-              <br/>
-              While our expertise is in technology, marketing and experience design, our passion is in addressing transformational business challenges for our clients, including strategy consulting, service design, technology services, and optimization of business-critical digital platforms for multichannel e-commerce and marketing.
-              <br/>
-              <br/>
               </p>
               <p><a className="primary" href="https://www.valtech.com/" target="_blank" rel="noopener noreferrer" > + Learn more about Valtech</a></p>
+              <h4 className="p-header primary">WHAT IS CREATE LABS?</h4>
+              <p className="speech">
+              Create Labs is a minority founded social venture whose mission is to equip underserved populations with the skills, resources and networks needed to work and thrive in the tech and media industries by providing access to new technology, skills training, mentorship and career opportunities through live and virtual experiences.
+              <br />
+              </p>
+              <p><a className="primary" href="https://createlabs.io/" target="_blank" rel="noopener noreferrer" > + Learn more about Create Labs</a></p>
             </div>
           </section>
-          {/* <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/>
-          <section id="themes" className="pageThemes jumptarget">
-            <h1>Themes</h1>
+          <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/>
+          <section id="prizes" className="pageThemes jumptarget">
+            <h1>Prizes and Awards</h1>
             <div className="w-800p margin-center container-fluid">
-              <h5 class="primary font-weight-bold m-b-8">THERE'S NO PLACE LIKE HOME</h5>
+              <h5 class="primary font-weight-bold m-b-8">COMING SOON</h5>
               <br/>
-              <p className="m-b-8">
+              {/* <p className="m-b-8">
                 As a part of Quakecon at Home, it’s only right that the theme for Version Alpha: Homebrew revolves around the home. As a setting or more abstract concept, you can take the idea of the home and interpret it as you please.
               </p>
               <p className="m-b-8">
                 Whether your game is about returning home or takes place in one, we’re looking forward to seeing your use of the theme!
-              </p>
+              </p> */}
             </div>
-          </section> */}
+          </section>
           {/* <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/> */}
           {/* SCHEDULE DISABLED TEMPORARILY */}
           {/* <section id="schedule" className="jumptarget">

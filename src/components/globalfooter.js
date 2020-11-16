@@ -40,7 +40,7 @@ export default function GlobalFooter() {
               <b>|</b>
               {" "}<a href="https://astr.sk/code" target="_blank" rel="noopener noreferrer">Privacy</a>{" "}
               <b>|</b>
-              {" "}<a href="https://astr.sk/code" target="_blank" rel="noopener noreferrer">Sales</a>{" "}
+              {" "}<a href="https://astr.sk/co1de" target="_blank" rel="noopener noreferrer">Sales</a>{" "}
               <b>|</b>
               {" "}<a href="https://astr.sk/code" target="_blank" rel="noopener noreferrer">Ethics</a>
             </p>
