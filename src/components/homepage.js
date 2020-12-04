@@ -18,7 +18,7 @@ export default class HomePage extends Component {
             <img src="https://cdn.weareasterisk.com/event-assets/valtech/VALTECH_logo_white.svg" alt="Valtech Logo" className="img-fluid image-center va-logo invert-color-filter"/>
             <h3 className="p-top-50 primary"><i></i></h3>
             <div className="description-block">
-              <p className="description-item">December 3th - 5th, 2020</p>
+              <p className="description-item">January 14 - 16th, 2021</p>
             </div>
             <NavLink to="/signup" >
               <Button className='skeletonButton'>Register Now!</Button>

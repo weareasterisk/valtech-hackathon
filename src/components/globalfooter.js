@@ -34,7 +34,7 @@ export default function GlobalFooter() {
         <footer style={{position: "relative", marginTop: "50", bottom: 0, left: 0, width: "100%", textAlign: "center"}} class="container">
           <div style={{ display: `${(matches ? "block" : "flex")}`, flexDirection: `${(matches ? "row" : "col")}`, alignItems: "center" }}>
             <p class="pull-left col-md-8 col-sm-12">
-              © <script>document.write(new Date().getFullYear())</script>2020 Asterisk. Made with <span id="footer-heart"><FaHeart size="18" /></span> in Dallas.
+              © {new Date().getFullYear()} Asterisk. Made with <span id="footer-heart"><FaHeart size="18" /></span> in Dallas.
               {" "}
               {" "}<a href="https://astr.sk/code" target="_blank" rel="noopener noreferrer">Terms</a>{" "}
               <b>|</b>
