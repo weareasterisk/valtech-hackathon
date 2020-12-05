@@ -7,17 +7,17 @@ import Media from "react-media"
 export default function GlobalFooter() {
   // let index = 1;
   const [index, setIndex] = useState(1)
+  const [heartColor, setHeartColor] = useState("#E12727")
   
   
   const advanceColor = useCallback(() => {
-    const heart = document.getElementById("footer-heart");
     const colours = [
       "#E12727",
       "#00c8ff",
       "#41B649",
       "#1B459C",
     ]
-    heart.style.color = colours[index % colours.length]
+    setHeartColor(colours[index % colours.length])
     setIndex(index + 1)
   }, [index])
 
@@ -34,7 +34,7 @@ export default function GlobalFooter() {
         <footer style={{position: "relative", marginTop: "50", bottom: 0, left: 0, width: "100%", textAlign: "center"}} class="container">
           <div style={{ display: `${(matches ? "block" : "flex")}`, flexDirection: `${(matches ? "row" : "col")}`, alignItems: "center" }}>
             <p class="pull-left col-md-8 col-sm-12">
-              © {new Date().getFullYear()} Asterisk. Made with <span id="footer-heart"><FaHeart size="18" /></span> in Dallas.
+              © {new Date().getFullYear()} Asterisk. Made with <span id="footer-heart" style={{ color: heartColor }}><FaHeart size="18" /></span> in Dallas.
               {" "}
               {" "}<a href="https://astr.sk/code" target="_blank" rel="noopener noreferrer">Terms</a>{" "}
               <b>|</b>

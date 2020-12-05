@@ -18,7 +18,7 @@ export default class ScheduleItem extends Component {
     return (
       <Row className="p-b-8">
         <Col xs={6} className="primary text-right font-weight-medium line-height-min">{event.event}</Col>
-        <Col xs={6} className="text-white font-weight-normal line-height-min"><u>{event.time}</u></Col>
+        <Col xs={6} className="text-white font-weight-normal line-height-min">{event.time}</Col>
       </Row>
     )
   }

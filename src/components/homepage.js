@@ -66,11 +66,11 @@ export default class HomePage extends Component {
               </p> */}
             </div>
           </section>
-          {/* <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/> */}
+          <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/>
           {/* SCHEDULE DISABLED TEMPORARILY */}
-          {/* <section id="schedule" className="jumptarget">
+          <section id="schedule" className="jumptarget">
             <Schedule/>
-          </section> */}
+          </section>
           <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/>
           {/* IMPORT FAQ */}
           <section id="faq" className="jumptarget">
@@ -85,23 +85,45 @@ export default class HomePage extends Component {
               }
             </Media>
           </section>
-          {/* ########## */}
-          {/* <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/> */}
-          {/* <section id="partners" className="jumptarget">
+          <img src="https://cdn.weareasterisk.com/hackathon-assets/versionalpha/logos/VA_Logo_MarkWhite.svg" className="img-fluid image-center break-image-small"/>
+          <section id="partners" className="jumptarget">
             <h1>Partners</h1>
             <br/>
             <div className="w-800p margin-center container-fluid h-100 justify-content-center">
               <Row className="justify-content-center">
                 <Col sm="4" xs="6">
                   <div className="vertical-center-image">
-                    <a href="https://quakecon.bethesda.net/en/" target="_blank" rel="noopener noreferrer" title="QuakeCon" >
-                      <img src="https://cdn.weareasterisk.com/sponsor-assets/quakecon/quakecon-at-home--longform--color--RGB--transparent-background.png" className="image-center partners-image"/>
+                    <a href="https://createlabs.io/" target="_blank" rel="noopener noreferrer" title="Create Labs" >
+                      <img src="https://cdn.weareasterisk.com/event-assets/valtech/sponsors/CreateLabsrev2.png" className="image-center invert-color-filter partners-image" alt="createlabs" />
+                    </a>
+                  </div>
+                </Col>
+                <Col sm="4" xs="6">
+                  <div className="vertical-center-image">
+                    <a href="https://www.contentful.com/" target="_blank" rel="noopener noreferrer" title="Contentful" >
+                      <img src="https://cdn.weareasterisk.com/event-assets/valtech/sponsors/contentful-logo-wordmark-dark.png" className="image-center invert-color-filter partners-image" alt="createlabs" />
+                    </a>
+                  </div>
+                </Col>
+                <Col sm="4" xs="6">
+                  <div className="vertical-center-image">
+                    <a href="https://www.henrystreet.org/" target="_blank" rel="noopener noreferrer" title="Henry Street" >
+                      <img src="https://www.abronsartscenter.org/wp-content/themes/aac-theme/images/logo-toppanel.png" className="image-center invert-color-filter partners-image" alt="createlabs" />
+                    </a>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="justify-content-center">
+                <Col sm="4" xs="6">
+                  <div className="vertical-center-image">
+                    <a href="https://hackathonmentors.org/" target="_blank" rel="noopener noreferrer" title="Hackathon Mentors" >
+                      <img src="https://hackathonmentors.org/wp-content/uploads/2019/12/hackathonMentorsLogo.png" className="image-center invert-color-filter partners-image" alt="createlabs" />
                     </a>
                   </div>
                 </Col>
               </Row>
             </div>
-          </section> */}
+          </section>
         </div>
       </div>
     )

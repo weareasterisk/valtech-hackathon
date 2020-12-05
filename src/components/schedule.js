@@ -30,7 +30,8 @@ export default class Schedule extends Component {
             </Col>
           )}
         </Row>
-        <p><b> <a className="primary" href="https://quakecon.bethesda.net/en/schedule/" target="_blank" rel="noopener noreferrer">+ See more on the QuakeCon at Home Schedule</a></b></p>
+        <p><b>All times are in CST</b></p>
+        {/* <p><b> <a className="primary" href="https://quakecon.bethesda.net/en/schedule/" target="_blank" rel="noopener noreferrer">+ See more on the QuakeCon at Home Schedule</a></b></p> */}
       </div>
     )
   }
